@@ -131,9 +131,9 @@ input[type="checkbox"] {
   font-weight: 700;
   padding: 3.2rem 0;
 }
-input[type="checkbox"]:checked + span {
+/* input[type="checkbox"]:checked + span {
   text-decoration: line-through;
-}
+} */
 label {
   display: inline-flex;
   gap: 10px;

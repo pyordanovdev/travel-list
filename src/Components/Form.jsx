@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-function Form({ setItems }) {
+function Form({ setItems, items }) {
   const [description, setDesctiption] = useState("");
   const [quantity, setQuantity] = useState(1);
   return (
@@ -35,6 +35,7 @@ function Form({ setItems }) {
       description: description,
       quantity: quantity,
       packed: false,
+      order: items.length + 1,
     };
     setDesctiption("");
     setQuantity(1);
